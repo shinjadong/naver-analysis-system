@@ -1,0 +1,55 @@
+# 네이버 자동화 프로파일 설정
+naver:
+  app_package: "com.nhn.android.search"
+  app_activity: ".ui.main.MainActivity"
+  
+# 검색어 데이터베이스
+keywords:
+  shopping:
+    - "에어팟 프로"
+    - "갤럭시 버즈"
+    - "무선 이어폰"
+    - "블루투스 헤드셋"
+    - "노이즈 캔슬링"
+  blog:
+    - "맛집 추천"
+    - "여행 후기"
+    - "헬스장 후기"
+    - "코딩 공부법"
+    - "주식 투자"
+  news:
+    - "주식 시장"
+    - "부동산 정책"
+    - "날씨 예보"
+    - "IT 뉴스"
+    
+# 한국 사용자 행동 패턴
+user_patterns:
+  peak_hours: [8, 12, 19, 22]
+  avg_session_duration: 180  # 초
+  clicks_per_session: 7.3
+  scroll_speed: 1.2  # 초당 화면 비율
+  
+# 행동 파라미터
+behavior:
+  typing:
+    min_delay_ms: 80
+    max_delay_ms: 400
+    typo_probability: 0.1
+  scrolling:
+    min_duration_ms: 150
+    max_duration_ms: 400
+  touch:
+    offset_range: 10  # 픽셀
+    pressure_min: 0.5
+    pressure_max: 1.0
+  session:
+    min_duration_s: 25
+    max_duration_s: 120
+    
+# 탐지 회피
+stealth:
+  random_delays: true
+  human_like_curves: true
+  session_variance: 0.3
+  activity_breaks: true

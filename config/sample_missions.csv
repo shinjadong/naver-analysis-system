@@ -1,0 +1,21 @@
+# 미션 파일 예시
+# 형식: keyword,blog_title,url (url은 선택)
+#
+# 이 파일을 수정하여 자신만의 미션을 정의하세요.
+# 프로젝트 매니저가 이 파일을 읽어 자동으로 미션을 생성합니다.
+
+# === 맛집 캠페인 ===
+서울맛집,강남역 숨은 맛집 베스트10,https://blog.naver.com/foodlover/111
+홍대맛집,홍대 데이트 코스 맛집 추천,https://blog.naver.com/datespot/222
+이태원맛집,이태원 브런치 카페 TOP5,https://blog.naver.com/brunchcafe/333
+강남카페,강남역 분위기 좋은 카페,
+잠실맛집,잠실 롯데타워 맛집,
+
+# === 여행 캠페인 ===
+제주여행,제주도 3박4일 여행코스,https://blog.naver.com/jejutrip/444
+부산여행,부산 해운대 여행 추천,https://blog.naver.com/busantrip/555
+강원도여행,강원도 펜션 추천,
+
+# === IT/테크 캠페인 ===
+파이썬강좌,파이썬 기초 강좌 정리,
+AI입문,AI 머신러닝 입문 가이드,

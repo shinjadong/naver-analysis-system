@@ -1,0 +1,17 @@
+[Unit]
+Description=CareOn Traffic Engine - AI-driven Naver Traffic Automation
+After=network.target
+
+[Service]
+Type=simple
+User=tlswkehd
+WorkingDirectory=/home/tlswkehd/projects/cctv/ai-project
+Environment="PATH=/home/tlswkehd/projects/cctv/ai-project/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/tlswkehd/projects/cctv/ai-project/.venv/bin/uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

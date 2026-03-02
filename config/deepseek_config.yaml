@@ -1,0 +1,46 @@
+# DeepSeek API 설정
+api:
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  # API 키는 환경 변수에서 로드: DEEPSEEK_API_KEY
+  
+# 비용 관리
+cost_control:
+  daily_budget_usd: 5.00
+  max_tokens_per_request: 4096
+  cache_enabled: true
+  cache_ttl_hours: 24
+  
+# 계층적 처리
+tiered_processing:
+  # 1단계: 로컬 규칙 기반
+  local_rules:
+    enabled: true
+    priority: 1
+  # 2단계: 캐시된 응답
+  cached_responses:
+    enabled: true
+    priority: 2
+    similarity_threshold: 0.85
+  # 3단계: DeepSeek API
+  api_call:
+    enabled: true
+    priority: 3
+    
+# 요청 설정
+request:
+  timeout: 60
+  max_retries: 3
+  retry_delay: 1.0
+  temperature: 0.7
+  
+# 배치 처리
+batch:
+  enabled: true
+  max_batch_size: 10
+  batch_delay_seconds: 5
+  
+# 프롬프트 템플릿 경로
+prompts:
+  templates_dir: "src/cline_integration/prompts"
+  system_prompt_file: "system_prompt.md"

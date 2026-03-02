@@ -1,0 +1,32 @@
+{
+  "browsers": {
+    "com.android.chrome": {
+      "card_file": "chrome_naver.md",
+      "name": "Chrome",
+      "priority": 1,
+      "features": ["incognito_intent", "url_direct"]
+    },
+    "com.sec.android.app.sbrowser": {
+      "card_file": "samsung_naver.md",
+      "name": "Samsung Internet",
+      "priority": 2,
+      "features": ["bottom_nav", "ad_block", "samsung_pass"]
+    },
+    "com.microsoft.emmx": {
+      "card_file": "edge_naver.md",
+      "name": "Microsoft Edge",
+      "priority": 3,
+      "features": ["url_direct"]
+    }
+  },
+  "naver_domains": [
+    "m.naver.com",
+    "search.naver.com",
+    "m.blog.naver.com",
+    "m.cafe.naver.com",
+    "msearch.shopping.naver.com",
+    "m.news.naver.com",
+    "m.map.naver.com"
+  ],
+  "default_browser": "com.android.chrome"
+}
