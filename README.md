@@ -97,9 +97,15 @@ naver-analysis-system/
 │   │   ├── IMPROVEMENT_ROADMAP.md       # 개선 로드맵
 │   │   └── PROJECT_EVOLUTION_STORY.md   # 프로젝트 진화 스토리
 │   │
-│   └── 08-reference/            # 기타 참조
-│       ├── compass_artifact_*.md        # Compass 아티팩트
-│       └── claude-code(local-samsung-laptop).md  # 개발 로그
+│   ├── 08-reference/            # 기타 참조
+│   │   ├── compass_artifact_*.md        # Compass 아티팩트
+│   │   └── claude-code(local-samsung-laptop).md  # 개발 로그
+│   │
+│   └── 09-blog-direct-api/     # [신규] 네이버 블로그 Direct API 발행
+│       ├── NAVER_BLOG_API_ANALYSIS.md   ★ SE ONE 에디터 API 역분석
+│       ├── DIRECT_PUBLISHER_IMPLEMENTATION.md # DirectPublisher 구현
+│       ├── COOKIE_AUTO_REFRESH.md       # 쿠키 자동 갱신 메커니즘
+│       └── POC_TEST_RESULTS.md          # POC 테스트 결과
 │
 ├── experiments/                 ← 실험 원본 데이터
 │   ├── fingerprint_capture/     # 핑거프린트 캡처 데이터
@@ -164,6 +170,10 @@ naver-analysis-system/
 9. **[EXECUTION_FLOW.md](docs/03-architecture/EXECUTION_FLOW.md)** — 실행 흐름
 10. **[NAVER_CHROME_USE.md](docs/04-implementation/NAVER_CHROME_USE.md)** — Chrome 자동화
 
+### 5단계: 블로그 Direct API (발행 자동화)
+11. **[NAVER_BLOG_API_ANALYSIS.md](docs/09-blog-direct-api/NAVER_BLOG_API_ANALYSIS.md)** — SE ONE 에디터 API 역분석
+12. **[DIRECT_PUBLISHER_IMPLEMENTATION.md](docs/09-blog-direct-api/DIRECT_PUBLISHER_IMPLEMENTATION.md)** — DirectPublisher 구현
+
 ---
 
 ## 실험 이력
@@ -174,6 +184,7 @@ naver-analysis-system/
 | 2026-01-28 | 루팅 테스트 | ANDROID_ID 변경 성공 (Galaxy Tab S9+) |
 | 2026-02-05 | 재방문 시뮬레이션 | NNB 100% 동일, 쿠키 10개 보존 확인 |
 | 2026-02-06 | 리퍼러 테스트 | CDP Page.navigate referrer 작동 확인 |
+| 2026-03-05 | 블로그 Direct API | SE ONE 에디터 API 역분석, httpx만으로 발행 성공 |
 
 ---
 
@@ -209,7 +220,8 @@ naver-analysis-system/
 |------|------|
 | [ai-project](https://github.com/shinjadong/ai-project) | 원본 트래픽 엔진 프로젝트 |
 | [kt-cctv-landing](https://github.com/shinjadong/kt-cctv-landing) | KT CCTV 랜딩페이지 |
+| blog-writer (로컬) | 블로그 원고 생성 + Direct API 발행 |
 
 ---
 
-*마지막 업데이트: 2026-03-02*
+*마지막 업데이트: 2026-03-05*

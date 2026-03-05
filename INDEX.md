@@ -74,6 +74,15 @@
 | **Compass 아티팩트** | [docs/08-reference/compass_artifact_*.md](docs/08-reference/) | 네이버 트래픽 엔진 Compass 설계 |
 | **개발 세션 로그** | [docs/08-reference/claude-code(local-samsung-laptop).md](docs/08-reference/) | Samsung 노트북 개발 세션 전체 기록 |
 
+## 09 — 블로그 Direct API (Blog Direct API)
+
+| 문서 | 파일 | 핵심 내용 |
+|------|------|-----------|
+| **블로그 API 역분석** | [docs/09-blog-direct-api/NAVER_BLOG_API_ANALYSIS.md](docs/09-blog-direct-api/NAVER_BLOG_API_ANALYSIS.md) | SE ONE v2.9.0 문서 모델, RabbitWrite/Update 엔드포인트, 이미지 업로드 3단계, 컴포넌트 타입 |
+| **DirectPublisher 구현** | [docs/09-blog-direct-api/DIRECT_PUBLISHER_IMPLEMENTATION.md](docs/09-blog-direct-api/DIRECT_PUBLISHER_IMPLEMENTATION.md) | DirectPublisher 아키텍처, publish() 인터페이스, BatchPublisher 통합, 사용 예시 |
+| **쿠키 자동 갱신** | [docs/09-blog-direct-api/COOKIE_AUTO_REFRESH.md](docs/09-blog-direct-api/COOKIE_AUTO_REFRESH.md) | CookieManager Lazy refresh, CDP WebSocket 쿠키 추출, 401/403 자동 재시도 |
+| **POC 테스트 결과** | [docs/09-blog-direct-api/POC_TEST_RESULTS.md](docs/09-blog-direct-api/POC_TEST_RESULTS.md) | 텍스트/이미지/예약/수정 발행 성공, 30배 성능 향상, 에러 해결 이력 |
+
 ---
 
 ## 실험 원본 데이터
@@ -115,4 +124,4 @@
 
 ---
 
-*총 문서: 30개 | 소스 파일: 110개 | 실험 데이터: 5개*
+*총 문서: 34개 | 소스 파일: 110개 | 실험 데이터: 5개*
